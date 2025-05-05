@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 
+import HeaderComponent from "@/components/header/header.component";
+
+import "@/styles/typography.css";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,7 +25,12 @@ export default function RootLayout({
           type="text/css"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <main>
+          <HeaderComponent />
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

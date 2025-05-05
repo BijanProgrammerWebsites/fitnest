@@ -1,0 +1,26 @@
+.header {
+  display: grid;
+  grid-template-areas: "menu greetings" "menu status";
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+
+  .menu {
+    grid-area: menu;
+    align-self: center;
+
+    font-size: var(--fz-700);
+  }
+
+  .greetings {
+    grid-area: greetings;
+
+    font-size: var(--fz-600);
+    font-weight: 700;
+  }
+
+  .status {
+    grid-area: status;
+
+    font-size: var(--fz-500);
+  }
+}
