@@ -1,0 +1,26 @@
+.day {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+
+  cursor: pointer;
+
+  .status-indicator {
+  }
+
+  .day-of-the-week {
+  }
+
+  .date {
+  }
+
+  .today-indicator {
+    color: var(--color-primary);
+
+    font-size: var(--fz-500);
+  }
+
+  &.highlight {
+    color: var(--color-primary);
+  }
+}
